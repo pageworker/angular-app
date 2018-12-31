@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="Alex Jonk">
+
+    <meta name="theme-color" content="#317EFB"/>
+    <!-- Latest compiled and minified CSS -->
+
+    <base href="/">
+    <link rel="stylesheet" href="assets/css/bootstrap-3.3.7.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/loading.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css?v=2">
+
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/moment.min.js"></script>
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-resource.min.js"></script>
+    <script src="lib/angular-route.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+    <script src="lib/angular-sanitize.min.js"></script>
+    <script src="lib/angular-cookies.min.js"></script>
+    <script src="lib/angular-moment.min.js"></script>
+    <script src="lib/angular-touch.min.js"></script>
+
+    <script src="app/app.js?v=3"></script>
+    <script src="app/shared/services/array.js?v=3"></script>
+    <script src="app/components/home/home.js?v=6"></script>
+    <script src="app/shared/directives/loading/loading.js"></script>
+
+</head>
+
+<title>Angular App</title>
+<body>
+
+<div pat-loading class="loading-overlay" ng-show="loadingOverlay">
+    <div class='uil-ripple-css' style='transform:scale(0.6);'>
+        <div></div>
+        <div></div>
+        <noscript>
+            This site works only with javascript enabled!
+        </noscript>
+    </div>
+</div>
+
+
+<div ui-view></div>
+</body>
+
+</html>
